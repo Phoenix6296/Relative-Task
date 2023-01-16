@@ -47,23 +47,30 @@ const data = [
   },
 ];
 const Main = () => {
+  const headingIcon = require("../../Assets/activity.png");
   return (
-    <div className="main">
-      {data.map((item) => {
-        return (
-          <Card
-            title={item.title}
-            titleLogo={item.titleLogo}
-            price={item.price}
-            tvl={item.tvl}
-            logo1={item.image1}
-            logo2={item.image2}
-            logo3={item.image3}
-            net={item.net}
-            className={item.className}
-          />
-        );
-      })}
+    <div>
+      <div className="main__title">
+        <img src={headingIcon} alt="" />
+        <h3>Trending Assets</h3>
+      </div>
+      <div className="main center">
+        {data.map((item) => {
+          return (
+            <Card
+              title={item.title}
+              titleLogo={item.titleLogo}
+              price={item.price}
+              tvl={item.tvl}
+              logo1={item.image1}
+              logo2={item.image2}
+              logo3={item.image3}
+              net={item.net}
+              className={item.className}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
