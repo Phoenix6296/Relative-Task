@@ -5,7 +5,6 @@
 }
 
 .card__wrapper {
-    /* border: 1px solid yellow; */
     flex-direction: column;
 }
 
@@ -30,8 +29,12 @@
     background-color: #14172B;
     border-radius: 25px;
     padding: 0.5rem;
-    text-align: center;
     width: 70%;
+}
+
+.card__inside-div span {
+    margin: 0 0.2rem;
+    font-size: 0.8rem;
 }
 
 .card__icons {
@@ -41,4 +44,3 @@
 .card__icons img {
     width: 20px;
 }
-

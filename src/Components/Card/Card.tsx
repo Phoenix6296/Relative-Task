@@ -1,22 +1,37 @@
 import Circle from "../Cicle/Circle";
 import "./Card.css";
-const Card = () => {
-  const BitcoinLogo = require("../../Assets/bitcoinLogo.webp");
-  const EthereumLogo = require("../../Assets/ethereumLogo.webp");
-  const SolidityLogo = require("../../Assets/solidityLogo.webp");
+const Card = (props: {
+  title: string;
+  titleLogo: string;
+  price: string;
+  tvl: string;
+  logo1: string;
+  logo2: string;
+  logo3: string;
+  net: string;
+  className: string;
+}) => {
+  const classNameOfSpan = props.className;
   return (
     <div className="card__wrapper center">
-      <Circle />
+      <Circle titleLogo={props.titleLogo} />
       <div className="card center">
-        <p className="card__title">Bitcoin(BTC)</p>
-        <div className="card__inside-div">$31,820.80</div>
+        <p className="card__title">{props.title}</p>
+        <div className="card__inside-div center">
+          {props.price}
+          <span
+            style={{ color: classNameOfSpan === "success" ? "green" : "red" }}
+          >
+            {classNameOfSpan === "success" ? "+" + props.net : "-" + props.net}
+          </span>
+        </div>
         <p>Price</p>
-        <div className="card__inside-div">$60,000</div>
+        <div className="card__inside-div center">{props.tvl}</div>
         <p>TVL</p>
         <div className="card__inside-div center card__icons">
-          <img src={BitcoinLogo} alt="Bitcoin Logo" id="bitcoin-logo" />
-          <img src={EthereumLogo} alt="Ethereum Logo" />
-          <img src={SolidityLogo} alt="Solidity Logo" />
+          <img src={props.logo1} alt="Bitcoin Logo" id="bitcoin-logo" />
+          <img src={props.logo2} alt="Ethereum Logo" />
+          <img src={props.logo3} alt="Solidity Logo" />
         </div>
         <p>Popular Plans</p>
       </div>
