@@ -14,5 +14,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### Screenshots:
-![Screenshot (1)](../../Desktop/relative/src/Assets/Screenshots/Screenshot1.png)
-![Screenshot (2)](../../Desktop/relative/src/Assets/Screenshots/Screenshot2.png)
+![Screenshot (1)](https://github.com/Phoenix6296/relative-task/blob/master/src/Assets/Screenshots/Screenshot1.png)
+![Screenshot (2)](https://github.com/Phoenix6296/relative-task/blob/master/src/Assets/Screenshots/Screenshot2.png)
