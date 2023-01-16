@@ -8,7 +8,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Features of this app:
-- [1] Tech Stack: ReactJS, HTML5, CSS3, Javascript, Typescript.
+- [1] Tech Stack: ReactJS, HTML5, CSS3, Javascript, Typescript, Vercel, Git, Github.
 - [2] Responsive Design.
 - [3] Used Figma.
 
