@@ -18,6 +18,11 @@
 .card__outer-circle {
     width: 100px;
     height: 100px;
-    background-color: rebeccapurple;
+    background-color: #1D2033;
+    border: 1px solid #2B2D3F;
     border-radius: 25rem;
+}
+
+#circle-logo {
+    width: 30px;
 }
