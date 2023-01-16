@@ -1,0 +1,68 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__wrapper {
+    /* border: 1px solid yellow; */
+    flex-direction: column;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 18.25rem;
+    height: 25rem;
+    border: 1px solid #2B2D3D;
+    background-color: #1B1E33;
+    color: #6A72A2;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+}
+
+.card__title {
+    padding-top: 5rem;
+}
+
+.card__inside-div {
+    box-shadow: 0px -1px 2px 0px rgba(40, 44, 63, 0.81);
+    background-color: #14172B;
+    border-radius: 25px;
+    padding: 0.5rem;
+    text-align: center;
+    width: 70%;
+}
+
+.card__circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 25rem;
+    background-color: #14172B;
+    position: relative;
+    top: 4.5rem;
+    border-bottom: 1px solid #2B2D3D;
+}
+
+.card__inner-circle {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 25rem;
+}
+
+.card__outer-circle {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border-radius: 25rem;
+}
+.card__icons{
+    justify-content: space-evenly;
+}
+img {
+    width: 30px;
+}
+#bitcoin-logo{
+    width: 50px;
+}
